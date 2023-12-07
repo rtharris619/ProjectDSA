@@ -1,3 +1,3 @@
-import Topics.Recursion.StringReversal as StringReversal
+import Challenges.LeetCode.Blind75.Leet1 as Leet1
 
-StringReversal.test()
+Leet1.solve()
