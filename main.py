@@ -1,3 +1,4 @@
-import Challenges.LeetCode.Blind75.Leet1 as Leet1
+import Topics.PathFinding.MazePathFinder as PathFinder
+import Topics.PathFinding.PipedPathFinder as PipedFinder
 
-Leet1.solve()
+PipedFinder.driver()
