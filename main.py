@@ -1,5 +1,11 @@
-import Topics.PathFinding.MazePathFinder as PathFinder
-import Topics.PathFinding.PipedPathFinder as PipedFinder
-import Topics.Graphs.DAG as DAG
+from Challenges.AoC.Y2023.Day10 import Day10
 
-DAG.driver()
+from Topics.PathFinding import PipedPathFinder
+
+from Topics.PathFinding import TraverseMaze
+
+Day10.driver()
+
+# PipedPathFinder.driver()
+
+# TraverseMaze.driver()

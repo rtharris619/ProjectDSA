@@ -5,7 +5,7 @@ from typing import List, Tuple
 def create_maze():
     maze = [[".", ".", ".", ".", ".", ".", ".", ".", "."],
             [".", "F", "X", ".", ".", ".", ".", ".", "."],
-            [".", "|", ".", "F", "_", "Y", ".", ".", "."],
+            [".", "|", ".", "F", "_", "_", "Y", ".", "."],
             [".", "|", ".", "|", ".", ".", ".", ".", "."],
             [".", "L", "-", "J", ".", ".", ".", ".", "."],
             [".", ".", ".", ".", ".", ".", ".", ".", "."],
@@ -72,8 +72,6 @@ def is_valid(maze: List[List[str]], start_pos: Tuple[int, int], moves: str, visi
         if move == "W":
             if maze[row][col] == "7" or maze[row][col] == "J":
                 return False
-
-        visited[row][col] = True
 
     return True
 
