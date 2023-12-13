@@ -28,6 +28,19 @@ class Solution:
             visited[val] = i
 
 
+def test1():
+    nums = [2, 7, 11, 15]
+    target = 9
+    return nums, target
+
+
+def test2():
+    nums = [3, 2, 4]
+    target = 6
+
+    return nums, target
+
+
 def solve():
     s = Solution()
 
@@ -35,15 +48,3 @@ def solve():
 
     result = s.twoSumImproved(nums, target)
     print(result)
-
-
-def test1():
-    nums = [2, 7, 11, 15]
-    target = 9
-    return nums, target
-
-def test2():
-    nums = [3, 2, 4]
-    target = 6
-
-    return nums, target
