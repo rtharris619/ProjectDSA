@@ -1,12 +1,12 @@
 import math
 
 
-def find_binary(decimal: int, result: str):
-    if decimal == 0:
+def find_binary(number: int, result: str):
+    if number == 0:
         return result
 
-    result = str(decimal % 2) + result
-    return find_binary(math.floor(decimal / 2), result)
+    result = str(number % 2) + result
+    return find_binary(math.floor(number / 2), result)
 
 
 def test():

@@ -1,5 +1,5 @@
 from Challenges.LeetCode.Blind75 import Leet3
 
-from Topics.Recursion import DecimalToBinary
+from Topics.Recursion import Fibonacci
 
-DecimalToBinary.test()
+Fibonacci.test()
