@@ -1,5 +1,5 @@
 from Challenges.LeetCode.Blind75 import Leet3
 
-from Topics.Recursion import Factorial
+from Topics.BackTracking import NQueens2
 
-Factorial.test()
+NQueens2.solve()
