@@ -1,5 +1,5 @@
 from Challenges.LeetCode.Blind75 import Leet3
 
-from Topics.BackTracking import NQueens2
+from Topics.BackTracking import Sudoku
 
-NQueens2.solve()
+Sudoku.solve()
