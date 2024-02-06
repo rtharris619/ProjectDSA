@@ -1,5 +1,5 @@
 from Challenges.LeetCode.Blind75 import Leet3
 
-from Topics.BackTracking import Permutations
+from Topics.BackTracking import Permutations2
 
-Permutations.solve()
+Permutations2.solve()
