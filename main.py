@@ -1,5 +1,5 @@
 from Challenges.LeetCode.Blind75 import Leet3
 
-from Topics.BackTracking import Permutations2
+from Topics.BackTracking import PalindromePartitioning
 
-Permutations2.solve()
+PalindromePartitioning.solve()
