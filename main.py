@@ -1,5 +1,5 @@
 from Challenges.LeetCode.Blind75 import Leet3
 
-from Topics.BackTracking import SplittingStringDescendingOrder
+from Topics.BackTracking import FindUniqueBinaryString
 
-SplittingStringDescendingOrder.solve()
+FindUniqueBinaryString.solve()
