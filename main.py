@@ -1,5 +1,5 @@
 from Challenges.LeetCode.Blind75 import Leet3
 
-from Topics.BackTracking import FindUniqueBinaryString
+from Topics.BackTracking import RestoreIPAddress
 
-FindUniqueBinaryString.solve()
+RestoreIPAddress.solve()
