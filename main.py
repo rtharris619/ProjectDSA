@@ -1,5 +1,5 @@
-from Challenges.LeetCode.Blind75 import Leet3
+from Challenges.DailyCodingProblem.Book.Arrays import ProductOfAllOtherElements
 
-from Topics.BackTracking import RestoreIPAddress
+from Topics.BackTracking import PartitionKEqualSubsets
 
-RestoreIPAddress.solve()
+ProductOfAllOtherElements.solve()
