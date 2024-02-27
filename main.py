@@ -1,5 +1,5 @@
 from Challenges.DailyCodingProblem.Book.Arrays import ProductOfAllOtherElements
 
-from Topics.BackTracking import PartitionKEqualSubsets
+from Topics.BackTracking import NQueens2
 
-ProductOfAllOtherElements.solve()
+NQueens2.solve()
