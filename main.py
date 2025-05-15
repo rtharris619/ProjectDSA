@@ -1,3 +1,3 @@
-import topics.arrays_strings.two_pointers as two_pointers
+import leetcode.easy.leetcode_217 as leetcode_217
 
-two_pointers.driver()
+leetcode_217.driver()
