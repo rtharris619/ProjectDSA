@@ -1,3 +1,3 @@
-import leetcode.easy.leetcode_217 as leetcode_217
+import leetcode.easy.leetcode_242 as leetcode
 
-leetcode_217.driver()
+leetcode.driver()
