@@ -1,3 +1,11 @@
-﻿PLATFORM;IDENTIFIER;PROBLEM;TOPICS;DIFFICULTY;LISTS
-Leetcode;217;Contains Duplicate;Arrays;Easy;Neetcode 150
-Leetcode;242;Valid Anagram;Strings;Easy;Neetcode 150
+﻿PLATFORM;IDENTIFIER;PROBLEM;TOPICS;DIFFICULTY;LISTS;STATUS;LAST SOLVED
+Leetcode;217;Contains Duplicate;Arrays, Hashsets;Easy;Neetcode 150;SOLVED;15/05/2025
+Leetcode;242;Valid Anagram;Strings, Hashmaps;Easy;Neetcode 150;SOLVED;16/05/2025
+Leetcode;1;Two Sum;Arrays, Hashmaps;Easy;Neetcode 150;SOLVED;19/05/2025
+Leetcode;49;Group Anagrams;Strings, Hashmaps;Medium;Neetcode 150;SOLVED;19/05/2025
+;;;;;Neetcode 150;;
+;;;;;Neetcode 150;;
+;;;;;Neetcode 150;;
+;;;;;Neetcode 150;;
+;;;;;Neetcode 150;;
+;;;;;Neetcode 150;;

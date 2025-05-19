@@ -2,11 +2,11 @@
 
 ## Overview
 
-This project is designed to demonstrate the concept of checking if a string is a palindrome using the two-pointer technique. It is implemented in Python and showcases basic string manipulation and algorithmic thinking.
+This project is designed for solving all sorts of algorithmic problems.
 
 ## Structure
 
-- **main.py**: This is the entry point of the project. It imports the necessary modules and executes the driver function to demonstrate the palindrome checking functionality.
+- **main.py**: This is the entry point of the project.
 
 ## Getting Started
 
