@@ -2,6 +2,6 @@
 
 # leetcode_easy.driver()
 
-import leetcode.medium.leetcode_238 as leetcode_medium
+import leetcode.medium.leetcode_36 as leetcode_medium
 
 leetcode_medium.driver()
