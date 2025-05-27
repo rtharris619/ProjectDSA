@@ -1,7 +1,7 @@
-# import leetcode.easy.leetcode_1 as leetcode_easy
+import leetcode.easy.leetcode_125 as leetcode_easy
 
-# leetcode_easy.driver()
+leetcode_easy.driver()
 
-import leetcode.medium.leetcode_128 as leetcode_medium
+# import leetcode.medium.leetcode_128 as leetcode_medium
 
-leetcode_medium.driver()
+# leetcode_medium.driver()
