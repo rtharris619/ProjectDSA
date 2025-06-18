@@ -19,8 +19,7 @@ class TimeMap:
     
     # more than 1 timestamp, so now we need to search
 
-    max_timestamp = 0
-    current = ""
+    result = ""
     L = 0
     R = len(values) - 1
 
@@ -32,10 +31,9 @@ class TimeMap:
         R = mid - 1
       else:
         L = mid + 1
-        max_timestamp = max(max_timestamp, values[mid][1])
-        current = values[mid][0]
+        result = values[mid][0]
     
-    return current
+    return result
 
 
 def tests():
