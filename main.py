@@ -2,7 +2,7 @@
 
 # leetcode_easy.driver()
 
-import leetcode.medium.leetcode_143 as leetcode_medium
+import leetcode.medium.leetcode_2 as leetcode_medium
 
 leetcode_medium.driver()
 
