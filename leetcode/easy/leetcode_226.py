@@ -15,6 +15,7 @@ def invert_tree(root: Optional[TreeNode]) -> Optional[TreeNode]:
   root.left = root.right
   root.right = temp
 
+  # you can go either way with this.
   invert_tree(root.right)
   invert_tree(root.left)
 
