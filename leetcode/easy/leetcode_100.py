@@ -1,4 +1,5 @@
 from typing import Optional
+from collections import deque
 
 
 class TreeNode:
@@ -13,16 +14,29 @@ def is_same_tree(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
   def dfs(p, q):
     if not p and not q:
       return True
-    elif not p or not q:
-      return False
-    
-    if p.val != q.val:
+    if (not p or not q) or (p.val != q.val):
       return False
     
     return dfs(p.left, q.left) and dfs(p.right, q.right)
     
-    
   return dfs(p, q)
+
+
+def is_same_tree_2(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+  
+  stack = [[p, q]]
+  while stack:
+    pnode, qnode = stack.pop()
+    if pnode and qnode:
+      if pnode.val != qnode.val:
+        return False
+      else:
+        stack.append([pnode.left, qnode.left])
+        stack.append([pnode.right, qnode.right])
+    elif (pnode and not qnode) or (not pnode and qnode):
+      return False
+  
+  return True
 
 
 def test1():
@@ -34,7 +48,7 @@ def test1():
   q.left = TreeNode(2)
   q.right = TreeNode(3)
 
-  print(is_same_tree(p, q))
+  print(is_same_tree_2(p, q))
 
 
 def test2():
@@ -44,7 +58,7 @@ def test2():
   q = TreeNode(1)
   q.right = TreeNode(2)
 
-  print(is_same_tree(p, q))
+  print(is_same_tree_2(p, q))
 
 
 def test3():
@@ -56,7 +70,7 @@ def test3():
   q.left = TreeNode(1)
   q.right = TreeNode(2)
 
-  print(is_same_tree(p, q))
+  print(is_same_tree_2(p, q))
 
 
 def tests():

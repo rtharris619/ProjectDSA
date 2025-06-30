@@ -31,7 +31,7 @@ def max_depth_2(root: Optional[TreeNode]) -> int:
   q = deque([root])
   while q:
     for _ in range(len(q)):
-      node = q.popleft()
+      node = deque.popleft()
       if node.left:
         q.append(node.left)
       if node.right:
