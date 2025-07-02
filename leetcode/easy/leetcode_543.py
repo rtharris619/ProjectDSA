@@ -26,13 +26,13 @@ def diameter_of_binary_tree(root: Optional[TreeNode]) -> int:
   return diameter[0]
 
 
-def pre_order_traversal(root: TreeNode):
+def inorder_traversal(root: TreeNode):
   if not root:
     return
   
-  pre_order_traversal(root.left)
+  inorder_traversal(root.left)
   print(root.val, end=', ')
-  pre_order_traversal(root.right)
+  inorder_traversal(root.right)
 
 
 def tests():
