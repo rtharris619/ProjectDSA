@@ -29,12 +29,32 @@ def kth_smallest(root: Optional[TreeNode], k: int) -> int:
   return res[-1]
 
 
+def kth_smallest_2(root: Optional[TreeNode], k: int) -> int:
+
+  n = 0
+  stack = []
+  cur = root
+  
+  while cur or stack:
+    while cur:
+      stack.append(cur)
+      cur = cur.left
+    
+    cur = stack.pop()
+    n += 1
+    if n == k:
+      return cur.val
+    cur = cur.right
+
+  return -1
+
+
 def test1():
   root = TreeNode(3)
   root.left = TreeNode(1)
   root.left.right = TreeNode(2)
   root.right = TreeNode(4)
-  res = kth_smallest(root, 1)
+  res = kth_smallest_2(root, 3)
   print(res)
 
 
