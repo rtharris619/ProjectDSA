@@ -3,6 +3,7 @@ from typing import List
 
 def combination_sum(candidates: List[int], target: int) -> List[List[int]]:
   result = []
+  candidates.sort()
 
   def backtrack(i: int, current: List[int], total: int):
     if total == target:
@@ -12,9 +13,11 @@ def combination_sum(candidates: List[int], target: int) -> List[List[int]]:
       return
     
     current.append(candidates[i])
-    backtrack(i, current, total + candidates[i])
-
+    backtrack(i + 1, current, total + candidates[i])
     current.pop()
+
+    while i + 1 < len(candidates) and candidates[i] == candidates[i+1]:
+      i += 1
     backtrack(i + 1, current, total)
 
   backtrack(0, [], 0)
@@ -22,7 +25,7 @@ def combination_sum(candidates: List[int], target: int) -> List[List[int]]:
 
 
 def tests():
-  candidates, target = [2,3,6,7], 7
+  candidates, target = [10,1,2,7,6,1,5], 8
   print(combination_sum(candidates, target))
 
 
