@@ -29,7 +29,7 @@ def exist(board: List[List[str]], word: str) -> bool:
     for col in range(COLS):
       if board[row][col] == word[0] and backtrack(row, col, 0):
         return True
-      
+
   return False
 
 
