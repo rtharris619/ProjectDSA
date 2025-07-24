@@ -31,7 +31,7 @@ class Solution:
           islands += 1
 
     return islands
-  
+
 
 def tests():
   grid = [

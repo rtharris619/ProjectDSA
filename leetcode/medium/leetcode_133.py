@@ -10,6 +10,7 @@ class Node:
 class Solution:
   def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
     clone = {}
+    
     def dfs(node: Node):
       if node in clone:
         return clone[node]
@@ -19,7 +20,8 @@ class Solution:
       for neighbor in node.neighbors:
         cp.neighbors.append(dfs(neighbor))
       return cp
-    return dfs(node)
+    
+    return dfs(node) if node else None
 
 
 
