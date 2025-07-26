@@ -14,6 +14,11 @@ This project is designed for solving all sorts of algorithmic problems.
 
 - Python 3.x installed on your system.
 
+### Required Libraries
+
+- pip install networkx
+- pip install matplotlib
+
 ### Running the Project
 
 1. Clone the repository.
