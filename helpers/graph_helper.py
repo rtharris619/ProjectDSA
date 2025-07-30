@@ -7,6 +7,28 @@ class GraphHelper:
   def __init__(self, title: str):
     self.title = title
 
+  def _plot_undirected_graph(self, G: nx.Graph):
+    pos = nx.spring_layout(G)
+
+    # Draw the nodes
+    nx.draw_networkx_nodes(G, pos, node_color='lightgreen', node_size=700)
+
+    # Draw the edges (no arrows for undirected)
+    nx.draw_networkx_edges(
+        G, 
+        pos, 
+        edge_color='gray', 
+        width=2
+    )
+
+    # Draw the labels (node numbers)
+    nx.draw_networkx_labels(G, pos, font_size=10, font_weight='bold')
+
+    # Display the plot
+    plt.title(self.title)
+    plt.axis('off')  # Turn off the axis
+    plt.show()
+
 
   def _plot_directed_graph(self, G: nx.DiGraph):
     pos = nx.spring_layout(G)
@@ -42,6 +64,14 @@ class GraphHelper:
 
     self._plot_directed_graph(G)
 
+
+  def draw_undirected_graph(self, edges: List[List[int]]):
+    G = nx.Graph()
+
+    for edge in edges:
+        G.add_edge(edge[0], edge[1])
+
+    self._plot_undirected_graph(G)
 
 
 # def draw_adjacency_list_test():

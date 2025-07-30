@@ -40,11 +40,11 @@ def tests():
   res = Solution().canFinish(numCourses, prerequisites)
   print(res)
 
-  numCourses, prerequisites = 3, [[0,1], [1,2], [2,0]]
-  res = Solution().canFinish(numCourses, prerequisites)
-  print(res)
+  # numCourses, prerequisites = 3, [[0,1], [1,2], [2,0]]
+  # res = Solution().canFinish(numCourses, prerequisites)
+  # print(res)
   
-  # helper.GraphHelper('Course Schedule').draw_directed_graph(prerequisites)
+  helper.GraphHelper('Course Schedule').draw_directed_graph(prerequisites)
 
 
 def driver():
