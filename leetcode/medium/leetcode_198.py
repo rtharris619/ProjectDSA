@@ -35,8 +35,13 @@ class Solution:
   
   def rob3(self, nums: List[int]) -> int:
     a, b = 0, 0
+    # [a, b, n, n + 1, ...]
     for n in nums:
       a, b = b, max(n + a, b)
+      # a = 0, b = max(1 + 0, 0) = 1
+      # a = 1, b = max(2 + 0, 1) = 2
+      # a = 2, b = max(3 + 1, 2) = 4
+      # a = 4, b = max(1 + 2, 4) = 4
     return b
 
 
