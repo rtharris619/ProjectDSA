@@ -7,5 +7,5 @@
 # import leetcode.hard.leetcode_84 as leetcode_hard
 # leetcode_hard.driver()
 
-import algomonster.advanced_data_structures.union_find as uf
+import algomonster.advanced_data_structures.union_find_compression as uf
 uf.driver()
