@@ -15,10 +15,6 @@ class UnionFind:
         if rx == ry:
             return
         self.parent[rx] = ry
-    
-    def get_parent(self):
-        return self.parent
-
 
 def driver():
     n = 6
@@ -28,4 +24,4 @@ def driver():
     dsu.union(1, 0)
     dsu.union(5, 4)
     dsu.union(2, 0)
-    print("parent", dsu.get_parent())
+    print("parent", dsu.parent)

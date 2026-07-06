@@ -1,20 +1,27 @@
 class UnionFind:
     def __init__(self, n: int):
         self.parent = list(range(n))
+        self.rank = [0] * n
 
     def find(self, x: int) -> int:
         if self.parent[x] == x:
             return x
-        # apply path compression
         self.parent[x] = self.find(self.parent[x])
         return self.parent[x]
     
+    # attach shorter tree under the taller one
     def union(self, x: int, y: int) -> None:
         rx, ry = self.find(x), self.find(y)
         if rx == ry:
             return
-        self.parent[rx] = ry
-    
+        if self.rank[rx] < self.rank[ry]:
+            self.parent[rx] = ry
+        elif self.rank[rx] > self.rank[ry]:
+            self.parent[ry] = rx
+        else:
+            self.parent[ry] = rx
+            self.rank[rx] += 1
+
 def driver():
     n = 5
     print("  node", list(range(n)))
