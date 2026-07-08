@@ -7,5 +7,5 @@
 # import leetcode.hard.leetcode_84 as leetcode_hard
 # leetcode_hard.driver()
 
-import algomonster.advanced_data_structures.union_find_rank as uf
+import algomonster.advanced_data_structures.same_set as uf
 uf.driver()
