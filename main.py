@@ -7,5 +7,5 @@
 # import leetcode.hard.leetcode_84 as leetcode_hard
 # leetcode_hard.driver()
 
-import algomonster.advanced_data_structures.same_set as uf
+import algomonster.advanced_data_structures.set_counter as uf
 uf.driver()

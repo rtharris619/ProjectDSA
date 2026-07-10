@@ -35,7 +35,8 @@ def driver():
     dsu = SameSet()
     dsu.merge(3, 1)
     dsu.merge(1, 0)
-    dsu.merge(5, 4)
-    print(dsu.is_same(3, 0))
-    print(dsu.is_same(5, 0))
+    # dsu.merge(5, 4)
+    # print(dsu.is_same(3, 0))
+    # print(dsu.is_same(5, 0))
+    print(dsu.parent)
     
