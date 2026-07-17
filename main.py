@@ -10,5 +10,5 @@
 # import algomonster.advanced_data_structures.set_counter as uf
 # uf.driver()
 
-import algomonster.binary_search.find_first_occurrence as bs
+import algomonster.binary_search.square_root as bs
 bs.driver()
