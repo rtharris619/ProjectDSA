@@ -10,5 +10,8 @@
 # import algomonster.advanced_data_structures.set_counter as uf
 # uf.driver()
 
-import algomonster.binary_search.square_root as bs
-bs.driver()
+# import algomonster.binary_search.square_root as bs
+# bs.driver()
+
+import algomonster.two_pointers.remove_duplicates as tp
+tp.driver()
