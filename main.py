@@ -13,5 +13,5 @@
 # import algomonster.binary_search.square_root as bs
 # bs.driver()
 
-import algomonster.two_pointers.remove_duplicates as tp
+import algomonster.two_pointers.move_zeroes as tp
 tp.driver()
