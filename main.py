@@ -13,5 +13,11 @@
 # import algomonster.binary_search.square_root as bs
 # bs.driver()
 
-import algomonster.two_pointers.move_zeroes as tp
-tp.driver()
+# import algomonster.two_pointers.move_zeroes as tp
+# tp.driver()
+
+# import algomonster.recursion.factorial as fact
+# fact.driver()
+
+import algomonster.trees.in_order_traversal as trees
+trees.driver()
