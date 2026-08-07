@@ -9,5 +9,5 @@ def in_order_traversal(root: bt.Node):
 def driver():
     helper = bt.BinaryTreeHelper()
     encoded_tree = "5 4 3 x x 8 x x 6 x x"
-    root = helper.build_tree(iter(encoded_tree.split(" ")), int)
-    in_order_traversal(root)
+    bst = helper.build_tree(iter(encoded_tree.split(" ")), int)
+    in_order_traversal(bst)

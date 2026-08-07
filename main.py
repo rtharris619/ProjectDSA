@@ -22,5 +22,5 @@
 # import algomonster.trees.post_order_traversal as trees
 # trees.driver()
 
-import algomonster.depth_first_search.tree_max_depth as dfs
+import algomonster.depth_first_search.insert_bst as dfs
 dfs.driver()
