@@ -6,7 +6,6 @@ def word_break(s: str, words: list[str]) -> bool:
         for word in words:
             if s[start:].startswith(word):
                 res = res or dfs(start + len(word))
-
         return res
     return dfs(0)
 

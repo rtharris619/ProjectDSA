@@ -1,2 +1,2 @@
-import algomonster.backtracking.word_break as backtracking
+import algomonster.backtracking.decode_ways as backtracking
 backtracking.driver()
