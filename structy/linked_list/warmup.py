@@ -1,7 +1,4 @@
-class Node:
-    def __init__(self, val):
-        self.val = val
-        self.next = None
+from structy.helpers.linked_list_helper import LinkedListNode as Node
 
 def print_list(head):
     current = head
