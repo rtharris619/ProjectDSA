@@ -1,5 +1,5 @@
 # import algomonster.backtracking.decode_ways as backtracking
 # backtracking.driver()
 
-import structy.linked_list.get_node_value as structy
+import structy.linked_list.zipper_lists as structy
 structy.driver()
