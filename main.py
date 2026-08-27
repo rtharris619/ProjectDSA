@@ -1,5 +1,5 @@
 # import algomonster.backtracking.decode_ways as backtracking
 # backtracking.driver()
 
-import structy.linked_list.insert_node as structy
+import structy.binary_tree.tree_sum as structy
 structy.driver()
