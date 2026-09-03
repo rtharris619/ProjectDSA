@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.graph.traversal as structy
+import structy.graph.undirected_path as structy
 structy.driver()
