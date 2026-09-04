@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.graph.undirected_path as structy
+import structy.graph.largest_component as structy
 structy.driver()
