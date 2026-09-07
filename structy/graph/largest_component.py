@@ -1,4 +1,5 @@
 from structy.helpers.graph_helper import UndirectedGraph
+from collections import deque
 
 def dfs_rec(graph, current, visited):
     if current in visited:
@@ -9,12 +10,44 @@ def dfs_rec(graph, current, visited):
         size += dfs_rec(graph, neighbor, visited)
     return size
 
+def dfs(graph, node, visited):
+    if node in visited:
+        return 0
+    visited.add(node)
+
+    size = 1
+    stack = [node]
+    while stack:
+        current = stack.pop()
+        for neighbor in graph[current]:
+            if neighbor not in visited:
+                size += 1
+                visited.add(neighbor)
+                stack.append(neighbor)
+    return size
+
+def bfs(graph, node, visited):
+    if node in visited:
+        return 0
+    visited.add(node)
+    
+    size = 1
+    queue = deque([node])
+    while queue:
+        current = queue.popleft()
+        for neighbor in graph[current]:
+            if neighbor not in visited:
+                size += 1
+                visited.add(neighbor)
+                queue.append(neighbor)
+    return size
+
 def largest_component(graph):
     largest = 0
     visited = set()
 
     for node in graph:
-        size = dfs_rec(graph, node, visited)
+        size = bfs(graph, node, visited)
         if size > largest:
             largest = size
 

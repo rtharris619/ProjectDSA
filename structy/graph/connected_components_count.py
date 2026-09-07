@@ -45,7 +45,7 @@ def connected_components_count(graph: dict):
     visited = set()
 
     for node in graph:
-        if bfs(graph, node, visited):
+        if dfs_rec(graph, node, visited):
             count += 1
 
     return count

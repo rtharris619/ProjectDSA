@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.graph.largest_component as structy
+import structy.graph.minimum_island as structy
 structy.driver()
