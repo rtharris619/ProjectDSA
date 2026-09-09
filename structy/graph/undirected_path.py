@@ -1,4 +1,4 @@
-from structy.helpers.graph_helper import UndirectedGraph, GraphHelper
+from structy.helpers.graph_helper import UndirectedGraph
 
 def has_path(graph: dict, src: str, dst: str, visited: set) -> bool:
     if src == dst:
@@ -13,7 +13,7 @@ def has_path(graph: dict, src: str, dst: str, visited: set) -> bool:
     return False
 
 def undirected_path(edges: list[tuple], node_A: str, node_B: str):
-    graph = GraphHelper().convert_edges_to_graph(edges)
+    graph = UndirectedGraph().convert_edges_to_graph(edges)
     return has_path(graph, node_A, node_B, set())
 
 def driver():

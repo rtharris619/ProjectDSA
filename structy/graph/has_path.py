@@ -1,7 +1,9 @@
 from structy.helpers.graph_helper import DirectedGraph
 from collections import deque
 
-# This algorithm assumes no cycles.
+### 
+### This algorithm assumes no cycles.
+###
 
 def has_path_rec(graph: dict, src: str, dst: str) -> bool:
     if src == dst:

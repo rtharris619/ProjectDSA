@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.graph.minimum_island as structy
+import structy.graph.prereqs_possible as structy
 structy.driver()

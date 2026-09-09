@@ -1,22 +1,18 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
-class GraphHelper:
+class DirectedGraph:
+    def __init__(self):
+        self.G = nx.DiGraph()
+
     def convert_edges_to_graph(self, edges):
         graph = {}
         for edge in edges:
             a, b = edge
             if a not in graph:
                 graph[a] = []
-            if b not in graph:
-                graph[b] = []
             graph[a].append(b)
-            graph[b].append(a)
         return graph
-
-class DirectedGraph:
-    def __init__(self):
-        self.G = nx.DiGraph()
 
     def draw(self, graph: dict):
         for node, neighbors in graph.items():
@@ -44,6 +40,18 @@ class UndirectedGraph:
     def draw_using_edges(self, edges: list[tuple]):
         self.G.add_edges_from(edges)
         self._plot()
+
+    def convert_edges_to_graph(self, edges):
+        graph = {}
+        for edge in edges:
+            a, b = edge
+            if a not in graph:
+                graph[a] = []
+            if b not in graph:
+                graph[b] = []
+            graph[a].append(b)
+            graph[b].append(a)
+        return graph
         
     def _plot(self):
         nx.draw(

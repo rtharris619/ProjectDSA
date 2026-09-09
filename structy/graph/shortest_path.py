@@ -1,8 +1,8 @@
-from structy.helpers.graph_helper import UndirectedGraph, GraphHelper
+from structy.helpers.graph_helper import UndirectedGraph
 from collections import deque
 
 def shortest_path(edges, node_A: str, node_B: str):
-    graph = GraphHelper().convert_edges_to_graph(edges)    
+    graph = UndirectedGraph().convert_edges_to_graph(edges)    
     visited = set(node_A)
     queue = deque([(node_A, 0)])
     while queue:
