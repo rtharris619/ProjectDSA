@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.graph.prereqs_possible as structy
+import structy.sliding_window.max_subarray_product_size_k as structy
 structy.driver()
