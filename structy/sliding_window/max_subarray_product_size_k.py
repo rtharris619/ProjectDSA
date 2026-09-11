@@ -8,10 +8,10 @@ def max_subarray_product_size_k(nums, k):
             max_product = product
     return max_product
 
-def max_subarray_product_size_k_2(nums, k):
-    max_product = -inf
+def max_subarray_product_size_k_2(nums, k):    
     current_product = prod(nums[0:k])
-    
+    max_product = current_product
+
     for i in range(0, len(nums) - k):
         current_product /= nums[i]
         current_product *= nums[i + k]
