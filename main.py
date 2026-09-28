@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.sliding_window.longest_subarray_sum as structy
+import structy.sliding_window.max_ones_with_single_flip as structy
 structy.driver()
