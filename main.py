@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.sliding_window.max_ones_with_single_flip as structy
+import structy.sliding_window.count_substring_at_most_k_distinct as structy
 structy.driver()
