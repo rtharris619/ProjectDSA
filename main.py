@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.sliding_window.count_substring_at_most_k_distinct as structy
+import structy.sliding_window.count_substring_exactly_k_distinct as structy
 structy.driver()
