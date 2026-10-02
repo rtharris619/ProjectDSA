@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.two_pointer.is_subsequence as structy
+import structy.binary_search.square_root as structy
 structy.driver()
