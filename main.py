@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.binary_search.count_in_sorted_array as structy
+import structy.binary_search.find_in_rotated_sorted_array as structy
 structy.driver()
