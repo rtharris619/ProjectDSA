@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.binary_search.find_in_rotated_sorted_array as structy
+import structy.binary_search.search_sorted_grid as structy
 structy.driver()
