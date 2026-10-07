@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.binary_search.search_sorted_grid as structy
+import structy.dynamic_programming.sum_possible as structy
 structy.driver()
