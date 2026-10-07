@@ -2,10 +2,10 @@ def sum_possible(amount, numbers):
     return _sum_possible(amount, numbers, {})
 
 def _sum_possible(amount, numbers, memo) -> bool:
+    if amount in memo:
+        return memo[amount]    
     if amount == 0:
         return True
-    if amount in memo:
-        return memo[amount]
     if amount < 0:
         return False
     for num in numbers:

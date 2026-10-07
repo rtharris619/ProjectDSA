@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.dynamic_programming.sum_possible as structy
+import structy.dynamic_programming.max_path_sum as structy
 structy.driver()
