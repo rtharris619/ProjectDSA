@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.dynamic_programming.can_concat as structy
+import structy.dynamic_programming.count_compounds as structy
 structy.driver()
