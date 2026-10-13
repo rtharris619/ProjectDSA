@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.dynamic_programming.count_compounds as structy
+import structy.dynamic_programming.semesters_required as structy
 structy.driver()
