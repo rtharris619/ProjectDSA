@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.dynamic_programming.semesters_required as structy
+import structy.stack.nesting_score as structy
 structy.driver()
