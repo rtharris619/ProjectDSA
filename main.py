@@ -3,5 +3,5 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.array_and_string.merge_sort as structy
+import structy.array_and_string.detect_dictionary as structy
 structy.driver()
