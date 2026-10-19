@@ -3,8 +3,9 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-# import structy.linked_list.linked_list_cycle as structy
-# structy.driver()
+import structy.linked_list.create_linked_list as structy
+structy.driver()
 
-import aoc.twenty_fifteen.day_1.part_1 as aoc
-aoc.driver()
+# ADVENT OF CODE CHALLENGES
+# import aoc.twenty_fifteen.day_1.part_1 as aoc
+# aoc.driver()
