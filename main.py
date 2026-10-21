@@ -3,7 +3,7 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.linked_list.add_lists as structy
+import structy.binary_tree.is_binary_search_tree as structy
 structy.driver()
 
 # ADVENT OF CODE CHALLENGES
