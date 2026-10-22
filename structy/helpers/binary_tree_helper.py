@@ -26,3 +26,14 @@ class BinaryTree:
         self._in_order_traversal(root.left)
         print(root.val, end= " ")
         self._in_order_traversal(root.right)
+
+    def post_order_traversal(self, root: BinaryTreeNode):
+        self._post_order_traversal(root)
+        print()
+
+    def _post_order_traversal(self, root: BinaryTreeNode):
+        if root is None:
+            return
+        self._post_order_traversal(root.left)
+        self._post_order_traversal(root.right)
+        print(root.val, end=" ")
