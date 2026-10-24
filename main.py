@@ -3,7 +3,7 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.heap.k_smallest as structy
+import structy.recursion.create_combinations as structy
 structy.driver()
 
 # ADVENT OF CODE CHALLENGES
