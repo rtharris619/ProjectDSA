@@ -3,7 +3,7 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.binary_tree.is_tree_balanced as structy
+import structy.heap.k_smallest as structy
 structy.driver()
 
 # ADVENT OF CODE CHALLENGES
