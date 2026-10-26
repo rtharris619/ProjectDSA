@@ -9,7 +9,7 @@ def permutations(items):
     first = items[0]
     perms = []
     for perm in permutations(items[1:]):
-        for i in range(len(perm) + 1): # +1 because I need to include all iterations of adding 'first'.
+        for i in range(len(perm) + 1): # +1 because we need to include all iterations of adding 'first'.
            perms.append(perm[:i] + [first] + perm[i:]) # allows you to insert 'first' into every possible position.
     return perms
 

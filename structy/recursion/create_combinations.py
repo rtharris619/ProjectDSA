@@ -17,7 +17,7 @@ def create_combinations(items, k): # ([a, b, c], 2)
     return combos_with_first + combos_without_first
 
 def driver():
-    res = create_combinations(["a", "b", "c"], 2); # ->
+    res = create_combinations(["a", "b", "c"], 2) # ->
     # [
     #   [ 'a', 'b' ],
     #   [ 'a', 'c' ],
