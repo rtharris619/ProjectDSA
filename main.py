@@ -3,9 +3,9 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.recursion.substitute_synonyms as structy
-structy.driver()
+# import structy.graph.knight_attack as structy
+# structy.driver()
 
 # ADVENT OF CODE CHALLENGES
-# import aoc.twenty_fifteen.day_4.part_2 as aoc
-# aoc.driver()
+import aoc.twenty_fifteen.day_5.part_2 as aoc
+aoc.driver()

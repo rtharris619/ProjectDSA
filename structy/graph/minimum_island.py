@@ -27,7 +27,7 @@ def bfs(grid: list[list[str]], row: int, col: int, visited: set) -> int:
         size += 1
         directions = [(r + 1, c), (r - 1, c), (r, c + 1), (r, c - 1)]
         for r1, c1 in directions:
-            if r1 > 0 and c1 > 0 and r1 < len(grid) and c1 < len(grid[0]) and (r1, c1) not in visited and grid[r1][c1] == 'L':                
+            if r1 >= 0 and c1 >= 0 and r1 < len(grid) and c1 < len(grid[0]) and (r1, c1) not in visited and grid[r1][c1] == 'L':                
                 queue.append((r1, c1))
                 visited.add((r1, c1))
     return size
