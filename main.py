@@ -3,9 +3,9 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-# import structy.graph.knight_attack as structy
-# structy.driver()
+import structy.graph.tolerant_teams as structy
+structy.driver()
 
 # ADVENT OF CODE CHALLENGES
-import aoc.twenty_fifteen.day_5.part_2 as aoc
-aoc.driver()
+# import aoc.twenty_fifteen.day_6.part_2 as aoc
+# aoc.driver()
