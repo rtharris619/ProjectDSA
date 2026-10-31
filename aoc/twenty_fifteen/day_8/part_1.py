@@ -20,4 +20,4 @@ def solution():
 
 def driver():
     tests()
-    solution()
+    # solution()
