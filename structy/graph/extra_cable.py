@@ -64,8 +64,6 @@ def union(roots, sizes, a, b):
         roots[a] = root_b
         sizes[roots[b]] += sizes[roots[a]]
 
-    return
-
 
 def find(roots, node):
     if roots[node] == node:

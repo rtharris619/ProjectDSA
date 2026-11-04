@@ -3,7 +3,7 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.graph.extra_cable as structy
+import structy.graph.lowest_toll as structy
 structy.driver()
 
 # ADVENT OF CODE CHALLENGES
