@@ -3,7 +3,7 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.graph.lowest_toll as structy
+import structy.mixed.max_increasing_subseq as structy
 structy.driver()
 
 # ADVENT OF CODE CHALLENGES
