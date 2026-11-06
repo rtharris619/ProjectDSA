@@ -3,7 +3,7 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.mixed.max_increasing_subseq as structy
+import structy.mixed.all_trips as structy
 structy.driver()
 
 # ADVENT OF CODE CHALLENGES
