@@ -3,7 +3,7 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.mixed.all_trips as structy
+import structy.mixed.virus_spread as structy
 structy.driver()
 
 # ADVENT OF CODE CHALLENGES
