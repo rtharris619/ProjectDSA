@@ -3,7 +3,7 @@
 # backtracking.driver()
 
 # STRUCTY COURSE
-import structy.mixed.best_house_build as structy
+import structy.mixed.token_transform as structy
 structy.driver()
 
 # ADVENT OF CODE CHALLENGES
